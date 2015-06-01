@@ -15,23 +15,30 @@
 
 @implementation ViewController
 {
-    UIImageView *_imageView;
+    UIButton *_button;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    _imageView.contentMode = UIViewContentModeScaleAspectFill;
-    _imageView.clipsToBounds = YES;
-    [self.view addSubview:_imageView];
     
-    
+    _button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_button addTarget:self action:@selector(buttonTouched:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_button];
+}
+
+- (void)buttonTouched:(id)sender
+{
+    NSString *imagePath = @"/Users/openthread/Desktop/1.jpg";
+    UIImage *thumnail = [OTLargeImageFileReader thumbImageFromLargeFile:imagePath
+                                                       withMinPixelSize:1080
+                                                              imageSize:CGSizeZero];
+    [_button setImage:thumnail forState:UIControlStateNormal];
 }
 
 - (void)viewDidLayoutSubviews
 {
-    _imageView.frame = self.view.bounds;
+    _button.frame = self.view.bounds;
 }
 
 @end
