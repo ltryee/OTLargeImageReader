@@ -7,21 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "OTLargeImageReader.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+{
+    UIImageView *_imageView;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
+    _imageView.clipsToBounds = YES;
+    [self.view addSubview:_imageView];
+    
+    
+}
+
+- (void)viewDidLayoutSubviews
+{
+    _imageView.frame = self.view.bounds;
 }
 
 @end

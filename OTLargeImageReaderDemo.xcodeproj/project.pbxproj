@@ -46,7 +46,7 @@
 		4250C7581B1C5192006550EA /* OTLargeAssetCopyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLargeAssetCopyWrapper.m; sourceTree = "<group>"; };
 		4250C7591B1C5192006550EA /* OTLargeImageFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeImageFileReader.h; sourceTree = "<group>"; };
 		4250C75A1B1C5192006550EA /* OTLargeImageFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLargeImageFileReader.m; sourceTree = "<group>"; };
-		4250C75B1B1C5192006550EA /* OTLargeImageProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeImageProcess.h; sourceTree = "<group>"; };
+		4250C75E1B1C526A006550EA /* OTLargeImageReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTLargeImageReader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +130,11 @@
 		4250C7561B1C5192006550EA /* OTLargeImageReader */ = {
 			isa = PBXGroup;
 			children = (
+				4250C75E1B1C526A006550EA /* OTLargeImageReader.h */,
 				4250C7571B1C5192006550EA /* OTLargeAssetCopyWrapper.h */,
 				4250C7581B1C5192006550EA /* OTLargeAssetCopyWrapper.m */,
 				4250C7591B1C5192006550EA /* OTLargeImageFileReader.h */,
 				4250C75A1B1C5192006550EA /* OTLargeImageFileReader.m */,
-				4250C75B1B1C5192006550EA /* OTLargeImageProcess.h */,
 			);
 			path = OTLargeImageReader;
 			sourceTree = "<group>";

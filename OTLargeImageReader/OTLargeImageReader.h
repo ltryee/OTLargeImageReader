@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
 
-#ifndef NeteaseMusic_OTLargeImageProcess_h
-#define NeteaseMusic_OTLargeImageProcess_h
+#ifndef Com_Openthread_OTLargeImageReader_h
+#define Com_Openthread_OTLargeImageReader_h
 
 #import "OTLargeImageFileReader.h"
 #import <ImageIO/ImageIO.h>
