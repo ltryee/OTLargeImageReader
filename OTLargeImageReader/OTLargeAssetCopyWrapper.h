@@ -20,7 +20,7 @@
  *
  *  @param photoAsset The photo ALAsset to.
  *  @param path       The path to save the full image.
- *  @param error      If error occurs, returns to this param.
+ *  @param error      If an error occurs, upon return contains an NSError object that describes the problem. \n Pass NULL if you do not want error information.
  *
  *  @return YES if save successed. Otherwise NO.
  */
@@ -29,8 +29,9 @@
             error:(NSError **)error;
 
 /**
- *  Save asset image to a sandbox path in background thread.
+ *  Save asset image to a sandbox path.
  *  Default buffer size is 256k, file at target path will be overwrite.
+ *  Excute and callback in a background thread.
  *
  *  @param photoAsset The photo ALAsset to.
  *  @param path       The path to save the full image.
@@ -47,7 +48,7 @@
  *  @param path            The path to save the full image.
  *  @param shouldOverwrite If file exist at path, whether it should be overwrited.
  *  @param bufferSize      Specific the buffer size to copy the image.
- *  @param error           If error occurs, returns to this param.
+ *  @param error           If an error occurs, upon return contains an NSError object that describes the problem. \n Pass NULL if you do not want error information.
  *
  *  @return YES if save successed. Otherwise NO.
  */
@@ -59,6 +60,7 @@
 
 /**
  *  Save asset image to a sandbox path. May specific the buffer size and should overwrite.
+ *  Excute and callback in a background thread.
  *
  *  @param photoAsset      The photo ALAsset to.
  *  @param path            The path to save the full image.
