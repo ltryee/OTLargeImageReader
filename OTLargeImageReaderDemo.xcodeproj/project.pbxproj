@@ -20,16 +20,6 @@
 		4250C7641B1C52CF006550EA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4250C7631B1C52CF006550EA /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4250C7471B1C517C006550EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4250C7251B1C517C006550EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4250C72C1B1C517C006550EA;
-			remoteInfo = OTLargeImageReaderDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4250C72D1B1C517C006550EA /* OTLargeImageReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTLargeImageReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250C7311B1C517C006550EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,7 +31,6 @@
 		4250C73B1B1C517C006550EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4250C73D1B1C517C006550EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4250C7401B1C517C006550EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4250C7461B1C517C006550EA /* OTLargeImageReaderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTLargeImageReaderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250C7571B1C5192006550EA /* OTLargeAssetCopyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeAssetCopyWrapper.h; sourceTree = "<group>"; };
 		4250C7581B1C5192006550EA /* OTLargeAssetCopyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLargeAssetCopyWrapper.m; sourceTree = "<group>"; };
 		4250C7591B1C5192006550EA /* OTLargeImageFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeImageFileReader.h; sourceTree = "<group>"; };
@@ -60,13 +49,6 @@
 				4250C7641B1C52CF006550EA /* AssetsLibrary.framework in Frameworks */,
 				4250C7621B1C52C8006550EA /* ImageIO.framework in Frameworks */,
 				4250C7601B1C52BB006550EA /* MobileCoreServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4250C7431B1C517C006550EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				4250C72D1B1C517C006550EA /* OTLargeImageReaderDemo.app */,
-				4250C7461B1C517C006550EA /* OTLargeImageReaderDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,24 +131,6 @@
 			productReference = 4250C72D1B1C517C006550EA /* OTLargeImageReaderDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4250C7451B1C517C006550EA /* OTLargeImageReaderDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4250C7531B1C517C006550EA /* Build configuration list for PBXNativeTarget "OTLargeImageReaderDemoTests" */;
-			buildPhases = (
-				4250C7421B1C517C006550EA /* Sources */,
-				4250C7431B1C517C006550EA /* Frameworks */,
-				4250C7441B1C517C006550EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4250C7481B1C517C006550EA /* PBXTargetDependency */,
-			);
-			name = OTLargeImageReaderDemoTests;
-			productName = OTLargeImageReaderDemoTests;
-			productReference = 4250C7461B1C517C006550EA /* OTLargeImageReaderDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,10 +142,6 @@
 				TargetAttributes = {
 					4250C72C1B1C517C006550EA = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					4250C7451B1C517C006550EA = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 4250C72C1B1C517C006550EA;
 					};
 				};
 			};
@@ -200,7 +159,6 @@
 			projectRoot = "";
 			targets = (
 				4250C72C1B1C517C006550EA /* OTLargeImageReaderDemo */,
-				4250C7451B1C517C006550EA /* OTLargeImageReaderDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,13 +171,6 @@
 				4250C73C1B1C517C006550EA /* Main.storyboard in Resources */,
 				4250C7411B1C517C006550EA /* LaunchScreen.xib in Resources */,
 				4250C73E1B1C517C006550EA /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4250C7441B1C517C006550EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,22 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4250C7421B1C517C006550EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4250C7481B1C517C006550EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4250C72C1B1C517C006550EA /* OTLargeImageReaderDemo */;
-			targetProxy = 4250C7471B1C517C006550EA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4250C73A1B1C517C006550EA /* Main.storyboard */ = {
@@ -375,40 +311,6 @@
 			};
 			name = Release;
 		};
-		4250C7541B1C517C006550EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OTLargeImageReaderDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTLargeImageReaderDemo.app/OTLargeImageReaderDemo";
-			};
-			name = Debug;
-		};
-		4250C7551B1C517C006550EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OTLargeImageReaderDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTLargeImageReaderDemo.app/OTLargeImageReaderDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,15 +328,6 @@
 			buildConfigurations = (
 				4250C7511B1C517C006550EA /* Debug */,
 				4250C7521B1C517C006550EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4250C7531B1C517C006550EA /* Build configuration list for PBXNativeTarget "OTLargeImageReaderDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4250C7541B1C517C006550EA /* Debug */,
-				4250C7551B1C517C006550EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
