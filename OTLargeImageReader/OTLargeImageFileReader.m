@@ -96,6 +96,14 @@
     return image;
 }
 
++ (void)thumbImageFromLargeFile:(NSString *)filePath withMaxPixelSize:(CGFloat)maxPixelSize imageSize:(CGSize)imageSize callback:(void(^)(UIImage *))callback
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        UIImage *image = [self thumbImageFromLargeFile:filePath withMaxPixelSize:maxPixelSize imageSize:imageSize];
+        callback(image);
+    });
+}
+
 + (UIImage *)thumbImageFromLargeFile:(NSString *)filePath withMinPixelSize:(CGFloat)minPixelSize imageSize:(CGSize)imageSize
 {
     if (CGSizeEqualToSize(imageSize, CGSizeZero))
@@ -118,7 +126,15 @@
     return image;
 }
 
-//Unused method, for future feature usage.
++ (void)thumbImageFromLargeFile:(NSString *)filePath withMinPixelSize:(CGFloat)minPixelSize imageSize:(CGSize)imageSize callback:(void(^)(UIImage *))callback
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        UIImage *image = [self thumbImageFromLargeFile:filePath withMinPixelSize:minPixelSize imageSize:imageSize];
+        callback(image);
+    });
+}
+
+//Unused method now, for future feature usage.
 void OTLargeImageCGImageWriteToFile(CGImageRef image, NSString *path)
 {
     CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:path];
