@@ -11,8 +11,6 @@
 		423BCAD01B1FF37600654C13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BCACF1B1FF37600654C13 /* main.m */; };
 		423BCAD21B1FF37600654C13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423BCAD11B1FF37600654C13 /* Images.xcassets */; };
 		423BCAD51B1FF37600654C13 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423BCAD31B1FF37600654C13 /* MainMenu.xib */; };
-		423BCAF01B20220800654C13 /* OTLargeAssetCopyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BCAEC1B20220800654C13 /* OTLargeAssetCopyWrapper.m */; };
-		423BCAF11B20220800654C13 /* OTLargeImageFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BCAEE1B20220800654C13 /* OTLargeImageFileReader.m */; };
 		423BCAF31B20223000654C13 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423BCAF21B20223000654C13 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,11 +33,6 @@
 		423BCAD11B1FF37600654C13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		423BCAD41B1FF37600654C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		423BCADA1B1FF37600654C13 /* OTLargeImageReaderMacDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTLargeImageReaderMacDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		423BCAEB1B20220800654C13 /* OTLargeAssetCopyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeAssetCopyWrapper.h; sourceTree = "<group>"; };
-		423BCAEC1B20220800654C13 /* OTLargeAssetCopyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLargeAssetCopyWrapper.m; sourceTree = "<group>"; };
-		423BCAED1B20220800654C13 /* OTLargeImageFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeImageFileReader.h; sourceTree = "<group>"; };
-		423BCAEE1B20220800654C13 /* OTLargeImageFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLargeImageFileReader.m; sourceTree = "<group>"; };
-		423BCAEF1B20220800654C13 /* OTLargeImageReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLargeImageReader.h; sourceTree = "<group>"; };
 		423BCAF21B20223000654C13 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -66,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				423BCAF21B20223000654C13 /* ImageIO.framework */,
-				423BCAEA1B20220800654C13 /* OTLargeImageReader */,
 				423BCAC91B1FF37600654C13 /* OTLargeImageReaderMacDemo */,
 				423BCAC81B1FF37600654C13 /* Products */,
 			);
@@ -100,18 +92,6 @@
 				423BCACF1B1FF37600654C13 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		423BCAEA1B20220800654C13 /* OTLargeImageReader */ = {
-			isa = PBXGroup;
-			children = (
-				423BCAEF1B20220800654C13 /* OTLargeImageReader.h */,
-				423BCAEB1B20220800654C13 /* OTLargeAssetCopyWrapper.h */,
-				423BCAEC1B20220800654C13 /* OTLargeAssetCopyWrapper.m */,
-				423BCAED1B20220800654C13 /* OTLargeImageFileReader.h */,
-				423BCAEE1B20220800654C13 /* OTLargeImageFileReader.m */,
-			);
-			path = OTLargeImageReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				423BCAD01B1FF37600654C13 /* main.m in Sources */,
-				423BCAF01B20220800654C13 /* OTLargeAssetCopyWrapper.m in Sources */,
 				423BCACE1B1FF37600654C13 /* AppDelegate.m in Sources */,
-				423BCAF11B20220800654C13 /* OTLargeImageFileReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
