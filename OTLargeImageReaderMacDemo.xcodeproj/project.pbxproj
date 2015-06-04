@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423BCACE1B1FF37600654C13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BCACD1B1FF37600654C13 /* AppDelegate.m */; };
+		423BCAD01B1FF37600654C13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BCACF1B1FF37600654C13 /* main.m */; };
+		423BCAD21B1FF37600654C13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423BCAD11B1FF37600654C13 /* Images.xcassets */; };
+		423BCAD51B1FF37600654C13 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423BCAD31B1FF37600654C13 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		423BCADB1B1FF37600654C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423BCABF1B1FF37500654C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423BCAC61B1FF37600654C13;
+			remoteInfo = OTLargeImageReaderMacDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		423BCAC71B1FF37600654C13 /* OTLargeImageReaderMacDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTLargeImageReaderMacDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		423BCACB1B1FF37600654C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423BCACC1B1FF37600654C13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		423BCACD1B1FF37600654C13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		423BCACF1B1FF37600654C13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		423BCAD11B1FF37600654C13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		423BCAD41B1FF37600654C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		423BCADA1B1FF37600654C13 /* OTLargeImageReaderMacDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTLargeImageReaderMacDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		423BCAC41B1FF37600654C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423BCAD71B1FF37600654C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		423BCABE1B1FF37500654C13 = {
+			isa = PBXGroup;
+			children = (
+				423BCAC91B1FF37600654C13 /* OTLargeImageReaderMacDemo */,
+				423BCAC81B1FF37600654C13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		423BCAC81B1FF37600654C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				423BCAC71B1FF37600654C13 /* OTLargeImageReaderMacDemo.app */,
+				423BCADA1B1FF37600654C13 /* OTLargeImageReaderMacDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		423BCAC91B1FF37600654C13 /* OTLargeImageReaderMacDemo */ = {
+			isa = PBXGroup;
+			children = (
+				423BCACC1B1FF37600654C13 /* AppDelegate.h */,
+				423BCACD1B1FF37600654C13 /* AppDelegate.m */,
+				423BCAD11B1FF37600654C13 /* Images.xcassets */,
+				423BCAD31B1FF37600654C13 /* MainMenu.xib */,
+				423BCACA1B1FF37600654C13 /* Supporting Files */,
+			);
+			path = OTLargeImageReaderMacDemo;
+			sourceTree = "<group>";
+		};
+		423BCACA1B1FF37600654C13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				423BCACB1B1FF37600654C13 /* Info.plist */,
+				423BCACF1B1FF37600654C13 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		423BCAC61B1FF37600654C13 /* OTLargeImageReaderMacDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423BCAE41B1FF37600654C13 /* Build configuration list for PBXNativeTarget "OTLargeImageReaderMacDemo" */;
+			buildPhases = (
+				423BCAC31B1FF37600654C13 /* Sources */,
+				423BCAC41B1FF37600654C13 /* Frameworks */,
+				423BCAC51B1FF37600654C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTLargeImageReaderMacDemo;
+			productName = OTLargeImageReaderMacDemo;
+			productReference = 423BCAC71B1FF37600654C13 /* OTLargeImageReaderMacDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		423BCAD91B1FF37600654C13 /* OTLargeImageReaderMacDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423BCAE71B1FF37600654C13 /* Build configuration list for PBXNativeTarget "OTLargeImageReaderMacDemoTests" */;
+			buildPhases = (
+				423BCAD61B1FF37600654C13 /* Sources */,
+				423BCAD71B1FF37600654C13 /* Frameworks */,
+				423BCAD81B1FF37600654C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423BCADC1B1FF37600654C13 /* PBXTargetDependency */,
+			);
+			name = OTLargeImageReaderMacDemoTests;
+			productName = OTLargeImageReaderMacDemoTests;
+			productReference = 423BCADA1B1FF37600654C13 /* OTLargeImageReaderMacDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		423BCABF1B1FF37500654C13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = openthread;
+				TargetAttributes = {
+					423BCAC61B1FF37600654C13 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					423BCAD91B1FF37600654C13 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 423BCAC61B1FF37600654C13;
+					};
+				};
+			};
+			buildConfigurationList = 423BCAC21B1FF37500654C13 /* Build configuration list for PBXProject "OTLargeImageReaderMacDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 423BCABE1B1FF37500654C13;
+			productRefGroup = 423BCAC81B1FF37600654C13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				423BCAC61B1FF37600654C13 /* OTLargeImageReaderMacDemo */,
+				423BCAD91B1FF37600654C13 /* OTLargeImageReaderMacDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423BCAC51B1FF37600654C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423BCAD21B1FF37600654C13 /* Images.xcassets in Resources */,
+				423BCAD51B1FF37600654C13 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423BCAD81B1FF37600654C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		423BCAC31B1FF37600654C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423BCAD01B1FF37600654C13 /* main.m in Sources */,
+				423BCACE1B1FF37600654C13 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423BCAD61B1FF37600654C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		423BCADC1B1FF37600654C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423BCAC61B1FF37600654C13 /* OTLargeImageReaderMacDemo */;
+			targetProxy = 423BCADB1B1FF37600654C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		423BCAD31B1FF37600654C13 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423BCAD41B1FF37600654C13 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		423BCAE21B1FF37600654C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		423BCAE31B1FF37600654C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		423BCAE51B1FF37600654C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OTLargeImageReaderMacDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		423BCAE61B1FF37600654C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OTLargeImageReaderMacDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		423BCAE81B1FF37600654C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OTLargeImageReaderMacDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTLargeImageReaderMacDemo.app/Contents/MacOS/OTLargeImageReaderMacDemo";
+			};
+			name = Debug;
+		};
+		423BCAE91B1FF37600654C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OTLargeImageReaderMacDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTLargeImageReaderMacDemo.app/Contents/MacOS/OTLargeImageReaderMacDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		423BCAC21B1FF37500654C13 /* Build configuration list for PBXProject "OTLargeImageReaderMacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423BCAE21B1FF37600654C13 /* Debug */,
+				423BCAE31B1FF37600654C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423BCAE41B1FF37600654C13 /* Build configuration list for PBXNativeTarget "OTLargeImageReaderMacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423BCAE51B1FF37600654C13 /* Debug */,
+				423BCAE61B1FF37600654C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		423BCAE71B1FF37600654C13 /* Build configuration list for PBXNativeTarget "OTLargeImageReaderMacDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423BCAE81B1FF37600654C13 /* Debug */,
+				423BCAE91B1FF37600654C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 423BCABF1B1FF37500654C13 /* Project object */;
+}
