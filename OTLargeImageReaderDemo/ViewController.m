@@ -10,7 +10,7 @@
 #import "OTLargeImageReader.h"
 #import "UIImage+TraditionalCompress.h"
 
-@interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface ViewController ()
 
 @end
 
@@ -70,13 +70,6 @@
                                            CGRectGetHeight(self.view.frame) / 2,
                                            CGRectGetWidth(self.view.frame),
                                            CGRectGetHeight(self.view.frame) / 2);
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker
-        didFinishPickingImage:(UIImage *)image
-                  editingInfo:(NSDictionary *)editingInfo
-{
-    [_imageReaderButton setImage:image forState:UIControlStateNormal];
 }
 
 + (NSString *)imagePath
