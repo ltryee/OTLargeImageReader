@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423F08521B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png in Resources */ = {isa = PBXBuildFile; fileRef = 423F08511B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png */; };
+		423F085B1B217B8C00C3E1E5 /* UIImage+TraditionalCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F085A1B217B8C00C3E1E5 /* UIImage+TraditionalCompress.m */; };
 		4250C7331B1C517C006550EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250C7321B1C517C006550EA /* main.m */; };
 		4250C7361B1C517C006550EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250C7351B1C517C006550EA /* AppDelegate.m */; };
 		4250C7391B1C517C006550EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250C7381B1C517C006550EA /* ViewController.m */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		423F08511B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haruhi_suzumiya_with_long_hair.png; sourceTree = "<group>"; };
+		423F08591B217B8C00C3E1E5 /* UIImage+TraditionalCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TraditionalCompress.h"; sourceTree = "<group>"; };
+		423F085A1B217B8C00C3E1E5 /* UIImage+TraditionalCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TraditionalCompress.m"; sourceTree = "<group>"; };
 		4250C72D1B1C517C006550EA /* OTLargeImageReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTLargeImageReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250C7311B1C517C006550EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4250C7321B1C517C006550EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				4250C7351B1C517C006550EA /* AppDelegate.m */,
 				4250C7371B1C517C006550EA /* ViewController.h */,
 				4250C7381B1C517C006550EA /* ViewController.m */,
+				423F08591B217B8C00C3E1E5 /* UIImage+TraditionalCompress.h */,
+				423F085A1B217B8C00C3E1E5 /* UIImage+TraditionalCompress.m */,
 				4250C73A1B1C517C006550EA /* Main.storyboard */,
 				4250C73D1B1C517C006550EA /* Images.xcassets */,
 				4250C73F1B1C517C006550EA /* LaunchScreen.xib */,
@@ -190,6 +195,7 @@
 				4250C75C1B1C5192006550EA /* OTLargeAssetCopyWrapper.m in Sources */,
 				4250C7331B1C517C006550EA /* main.m in Sources */,
 				4250C75D1B1C5192006550EA /* OTLargeImageFileReader.m in Sources */,
+				423F085B1B217B8C00C3E1E5 /* UIImage+TraditionalCompress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

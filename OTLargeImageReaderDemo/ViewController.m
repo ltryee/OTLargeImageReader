@@ -8,37 +8,86 @@
 
 #import "ViewController.h"
 #import "OTLargeImageReader.h"
+#import "UIImage+TraditionalCompress.h"
 
-@interface ViewController ()
+@interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end
 
 @implementation ViewController
 {
-    UIButton *_button;
+    UIImageView *_backgroundImageView;
+    UIButton *_imageReaderButton;
+    UIButton *_imageContextButton;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_button addTarget:self action:@selector(buttonTouched:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_button];
+    _backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:_backgroundImageView];
+    
+    _imageReaderButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_imageReaderButton setTitle:@"Compress image using large image reader" forState:UIControlStateNormal];
+    [_imageReaderButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_imageReaderButton addTarget:self action:@selector(largeImageReaderButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_imageReaderButton];
+    
+    _imageContextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_imageContextButton setTitle:@"Compress image using CGContext" forState:UIControlStateNormal];
+    [_imageContextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_imageContextButton addTarget:self action:@selector(contextButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_imageContextButton];
+    
 }
 
-- (void)buttonTouched:(id)sender
+- (void)largeImageReaderButtonTouched:(id)sender
 {
-    NSString *imagePath = @"/Users/openthread/Desktop/1.jpg";
-    UIImage *thumnail = [OTLargeImageFileReader thumbImageFromLargeFile:imagePath
+    NSString *imagePath = [[self class] imagePath];
+    UIImage *thumbnail = [OTLargeImageFileReader thumbImageFromLargeFile:imagePath
                                                        withMinPixelSize:1080
                                                               imageSize:CGSizeZero];
-    [_button setImage:thumnail forState:UIControlStateNormal];
+    _backgroundImageView.image = thumbnail;
+}
+
+- (void)contextButtonTouched:(id)sender
+{
+    UIImage *image = [UIImage imageWithContentsOfFile:[[self class] imagePath]];
+    UIImage *compressedImage = [image imageByScalingProportionallyToSize:CGSizeMake(1080, 1080)];
+    _backgroundImageView.image = compressedImage;
+    image = nil;
 }
 
 - (void)viewDidLayoutSubviews
 {
-    _button.frame = self.view.bounds;
+    _backgroundImageView.frame = self.view.bounds;
+    _imageReaderButton.frame = CGRectMake(0,
+                                          0,
+                                          CGRectGetWidth(self.view.frame),
+                                          CGRectGetHeight(self.view.frame) / 2);
+    _imageContextButton.frame = CGRectMake(0,
+                                           CGRectGetHeight(self.view.frame) / 2,
+                                           CGRectGetWidth(self.view.frame),
+                                           CGRectGetHeight(self.view.frame) / 2);
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+        didFinishPickingImage:(UIImage *)image
+                  editingInfo:(NSDictionary *)editingInfo
+{
+    [_imageReaderButton setImage:image forState:UIControlStateNormal];
+}
+
++ (NSString *)imagePath
+{
+    static NSString *cachePath = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        cachePath = [[NSBundle mainBundle] pathForResource:@"haruhi_suzumiya_with_long_hair" ofType:@"png"];
+    });
+    return cachePath;
 }
 
 @end

@@ -78,17 +78,17 @@
 {
     if (CGSizeEqualToSize(imageSize, CGSizeZero))
     {
-        NSError *error = nil;
-        imageSize = [self getImageEXIFSizeFromFilePath:filePath error:&error];
-        if (error)
-        {
-            return nil;
-        }
+        imageSize = [self getImageEXIFSizeFromFilePath:filePath error:nil];
     }
     
-    //If larger dimonsion of original image less than pressed image, return original one
-    if (MAX(imageSize.width, imageSize.height) < maxPixelSize)
+    if (CGSizeEqualToSize(imageSize, CGSizeZero))
+        //If maxPixelSize not passed and get EXIF failed
     {
+        //do nothing here, use maxPixelSize
+    }
+    else if (MAX(imageSize.width, imageSize.height) < maxPixelSize)
+    {
+        //If larger dimonsion of original image less than pressed image, return original one
         maxPixelSize = MAX(imageSize.width, imageSize.height);
     }
     
@@ -108,20 +108,26 @@
 {
     if (CGSizeEqualToSize(imageSize, CGSizeZero))
     {
-        NSError *error = nil;
-        imageSize = [self getImageEXIFSizeFromFilePath:filePath error:&error];
-        if (error)
-        {
-            return nil;
-        }
+        imageSize = [self getImageEXIFSizeFromFilePath:filePath error:nil];
     }
     
-    //If smaller dimonsion of original image less than pressed image, return original one
-    if (MIN(imageSize.width, imageSize.height) < minPixelSize)
+    CGFloat maxPixelSize = 0;
+    if (CGSizeEqualToSize(imageSize, CGSizeZero))
     {
-        minPixelSize = MIN(imageSize.width, imageSize.height);
+        //If minPixelSize not passed and get EXIF failed
+        //Use minPixelSize as maxPixelSize
+        maxPixelSize = minPixelSize;
     }
-    CGFloat maxPixelSize = round((MAX(imageSize.width, imageSize.height) / MIN(imageSize.width, imageSize.height)) * minPixelSize);
+    else
+    {
+        //If image size already passed or get EXIF successed
+        if (MIN(imageSize.width, imageSize.height) < minPixelSize)
+            //If smaller dimonsion of original image less than pressed image, return original one
+        {
+            minPixelSize = MIN(imageSize.width, imageSize.height);
+        }
+        maxPixelSize = round((MAX(imageSize.width, imageSize.height) / MIN(imageSize.width, imageSize.height)) * minPixelSize);
+    }
     UIImage *image = [self thumbImageFromLargeFile:filePath withConfirmedMaxPixelSize:maxPixelSize];
     return image;
 }
