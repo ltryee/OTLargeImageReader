@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423F08521B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png in Resources */ = {isa = PBXBuildFile; fileRef = 423F08511B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png */; };
 		4250C7331B1C517C006550EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250C7321B1C517C006550EA /* main.m */; };
 		4250C7361B1C517C006550EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250C7351B1C517C006550EA /* AppDelegate.m */; };
 		4250C7391B1C517C006550EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250C7381B1C517C006550EA /* ViewController.m */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		423F08511B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haruhi_suzumiya_with_long_hair.png; sourceTree = "<group>"; };
 		4250C72D1B1C517C006550EA /* OTLargeImageReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTLargeImageReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250C7311B1C517C006550EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4250C7321B1C517C006550EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				4250C7631B1C52CF006550EA /* AssetsLibrary.framework */,
 				4250C7611B1C52C8006550EA /* ImageIO.framework */,
 				4250C75F1B1C52BB006550EA /* MobileCoreServices.framework */,
+				423F08511B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png */,
 				4250C7561B1C5192006550EA /* OTLargeImageReader */,
 				4250C72F1B1C517C006550EA /* OTLargeImageReaderDemo */,
 				4250C72E1B1C517C006550EA /* Products */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4250C73C1B1C517C006550EA /* Main.storyboard in Resources */,
+				423F08521B205C4000C3E1E5 /* haruhi_suzumiya_with_long_hair.png in Resources */,
 				4250C7411B1C517C006550EA /* LaunchScreen.xib in Resources */,
 				4250C73E1B1C517C006550EA /* Images.xcassets in Resources */,
 			);
