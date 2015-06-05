@@ -30,7 +30,7 @@
     [self.view addSubview:_backgroundImageView];
     
     _imageReaderButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_imageReaderButton setTitle:@"Compress image using large image reader" forState:UIControlStateNormal];
+    [_imageReaderButton setTitle:@"Compress image using OTLargeImageReader" forState:UIControlStateNormal];
     [_imageReaderButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_imageReaderButton addTarget:self action:@selector(largeImageReaderButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_imageReaderButton];
