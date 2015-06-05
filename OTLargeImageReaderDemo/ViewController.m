@@ -40,7 +40,6 @@
     [_imageContextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_imageContextButton addTarget:self action:@selector(contextButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_imageContextButton];
-    
 }
 
 - (void)largeImageReaderButtonTouched:(id)sender
