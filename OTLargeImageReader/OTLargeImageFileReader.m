@@ -54,6 +54,9 @@
 {
     // Create the image source (from path)
     CGImageSourceRef src = CGImageSourceCreateWithURL((__bridge CFURLRef) [NSURL fileURLWithPath:filePath], NULL);
+    if (!src) {
+        return nil;
+    }
     
     // To create image source from UIImage, use this
     // NSData* pngData =  UIImagePNGRepresentation(image);
@@ -68,6 +71,9 @@
     // Generate the thumbnail
     CGImageRef thumbnail = CGImageSourceCreateThumbnailAtIndex(src, 0, options);
     CFRelease(src);
+    if (!thumbnail) {
+        return nil;
+    }
     
     UIImage *image = [[UIImage alloc] initWithCGImage:thumbnail];
     CFRelease(thumbnail);
